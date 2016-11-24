@@ -12,6 +12,7 @@ RUN apt-get update -y && apt-get install -y \
   htop \
   iftop \
   iotop \
-  mtr-tiny &&\
+  iputils-ping \
+  mtr-tiny && \
   rm -rf /var/lib/apt/lists/*
 COPY tests.sh /tmp/
