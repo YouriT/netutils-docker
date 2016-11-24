@@ -2,7 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/sjourdan/netutils-docker.svg?style=shield)](https://circleci.com/gh/sjourdan/netutils-docker)
 
-Contains some utilities (`dig`, `netcat`, `ifconfig`, `nmap`, `curl`, `traceroute`, `tcpdump`, `htop`, `iftop`, `iotop`, `mtr` etc)
+Contains some utilities (`dig`, `netcat`, `ifconfig`, `nmap`, `curl`, `traceroute`, `tcpdump`, `htop`, `iftop`, `iotop`, `mtr`, `ping` etc)
 
 Examples:
 
@@ -13,6 +13,8 @@ Examples:
     docker run -it --rm sjourdan/netutils ifconfig eth0
 
     docker run -it --rm sjourdan/netutils nc google.com 80
+    
+    docker run -it --rm sjourdan/netutils ping google.com
 
 ## Build
 
